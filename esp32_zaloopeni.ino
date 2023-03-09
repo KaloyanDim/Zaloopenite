@@ -32,7 +32,7 @@ void setup() {
   // Handle the button press on the web page
   server.on("/button", HTTP_GET, [](AsyncWebServerRequest *request){
     digitalWrite(relay_pin, HIGH);
-    request->send(200, "text/plain", "HYDRA IS ACTIVATED!");
+    request->send(200, "text/plain", "Kitsune is on the hunt!");
   });
 
   // Start the server
