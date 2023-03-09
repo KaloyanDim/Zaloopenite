@@ -9,11 +9,11 @@ const char* password = "your_PASSWORD";
 AsyncWebServer server(80);
 
 // Define the pin that will receive the signal
-const int ledPin = 2;
+const int relay_pin = 14;
 
 void setup() {
   // Set the pin mode
-  pinMode(ledPin, OUTPUT);
+  pinMode(relay_pin, OUTPUT);
 
   // Connect to Wi-Fi network with SSID and password
   Serial.begin(9600);
@@ -31,8 +31,8 @@ void setup() {
 
   // Handle the button press on the web page
   server.on("/button", HTTP_GET, [](AsyncWebServerRequest *request){
-    digitalWrite(ledPin, HIGH);
-    request->send(200, "text/plain", "Button pressed!");
+    digitalWrite(relay_pin, HIGH);
+    request->send(200, "text/plain", "HYDRA IS ACTIVATED!");
   });
 
   // Start the server
