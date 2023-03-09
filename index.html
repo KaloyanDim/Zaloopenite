@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Press the Kitsune</title>
+	<script>
+		function buttonPress() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", "/button", true);
+			xhttp.send();
+		}
+	</script>
+</head>
+<body>
+	<h1>Press the nine-tailed fox!</h1>
+	<button onclick="buttonPress()">The fox is unleashed!</button>
+</body>
+</html>
