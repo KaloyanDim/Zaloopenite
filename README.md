@@ -15,3 +15,5 @@
 2. Правантивен софтуер за този вид атаки
 3. Свързване със сървър, който позволява на потребителя да атакува замаскираното като HID устройство, Raspberry Pi Pico.
 
+## Линк за презентацията
+https://docs.google.com/presentation/d/1pGPwvQp9uXtJOJTtiUIDxvskjNsH2b2W7feO0J7MXJQ/edit?usp=sharing
